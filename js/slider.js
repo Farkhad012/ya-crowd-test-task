@@ -75,7 +75,7 @@ nextMobBtn.addEventListener('click', () => {
 
 function updateStagesSlider() {
   const slideWidth = stagesSlider.clientWidth / stagesSlidesPerPage;
-  stagesSlider.scrollLeft = stagesSlidesCurrentIndex * slideWidth;
+  stagesSlider.scrollLeft = (stagesSlidesCurrentIndex * (slideWidth + 20));
 
   dots.forEach((dot, index) => {
     dot.classList.toggle('active', index === stagesSlidesCurrentIndex);

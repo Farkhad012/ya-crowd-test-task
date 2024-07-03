@@ -36,8 +36,9 @@
 .marquee__content li {
   font-family: 'Merriweather';
   text-transform: uppercase;
-  /* padding-left: 100%; */
+  padding-right: 20px;
   font-size: 22px;
+  list-style: disc;
 }
 
 @media screen and (max-width: 768px) {

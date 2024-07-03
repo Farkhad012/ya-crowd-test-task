@@ -92,6 +92,11 @@
   transition: all 0.2s ease;
 }
 
+.btn a {
+  font-size: 16px;
+  color: inherit;
+}
+
 @media screen and (max-width: 768px) {
   .btn {
     width: 100%;
@@ -109,10 +114,20 @@
   }
 }
 
-.btn:hover {
-  background-color: var(--btn-hover-color);
-  color: var(--btn-bg-color);
-  border: 2px solid var(--btn-hover-color);
+@media (hover:hover) {
+  .btn:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--btn-bg-color);
+    border: 2px solid var(--btn-hover-color);
+  }
+}
+
+@media (hover:none) {
+  .btn:active {
+    background-color: var(--btn-hover-color);
+    color: var(--btn-bg-color);
+    border: 2px solid var(--btn-hover-color);
+  }
 }
 
 .hero__btn-focus {
