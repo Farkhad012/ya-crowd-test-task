@@ -1,0 +1,132 @@
+.members .container {
+  padding-bottom: 140px;
+}
+
+.members .wrapper {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.members__header {
+  justify-content: start;
+  flex: 0 0 70%;
+}
+
+.members__nav {
+  flex: 0 0 30%;
+  justify-content: end;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .members__nav {
+    order: 3;
+    flex: 0 0 100%;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.btn-circle {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color-light);
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 58%;
+}
+
+.members__nav button:first-child {
+  transform: rotate(-180deg);
+}
+
+.members__nav p {
+  letter-spacing: 2px;
+}
+
+.members__content {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .members__content {
+    margin-top: 40px;
+  }
+}
+
+.members__cards {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.members__profile {
+  flex: 0 0 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.members__profile-avatar {
+  padding-top: 21px;
+  width: 320px;
+  height: 320px;
+}
+
+.members__profile-avatar {
+  background-color: var(--section-background_color);
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1160px) {
+  .members__profile-avatar {
+    width: 244px;
+    height: 244px;
+  }
+
+}
+
+.members__profile-name {
+  margin-top: 28px;
+}
+
+.members__profile-status {
+  margin-top: 6px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.members__profile-button {
+  margin-top: 18px;
+  border: 1px solid var(--blue-color);
+  border-radius: 50px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: var(--blue-color);
+  font-weight: 600;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.members__profile-button:hover {
+  color: var(--btn-text-color-light);
+  background-color: var(--blue-color);
+}

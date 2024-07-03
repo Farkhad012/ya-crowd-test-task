@@ -1,0 +1,25 @@
+/* Переменные */
+:root {
+
+  /* colors */
+  --main-text-color: #1F1F1F;
+  --secondary-text-color: #313131;
+  --section-background_color: #E9DED4;
+
+  --btn-bg-color: #1F1F1F;
+  --btn-hover-color: #FBCE51;
+  --btn-text-color-light: #FFFFFF;
+  --btn-text-color-dark: #1F1F1F;
+
+  --blue-color: #3057A2;
+
+  --red-color: #F54932;
+
+  --table-border-color: #D0D0D0;
+  --dot-bg-color: #D9D9D9;
+
+  /* breakpoints */
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1200px;
+}

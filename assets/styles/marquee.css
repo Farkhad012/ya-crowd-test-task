@@ -1,0 +1,58 @@
+.marquee .wrapper {
+  padding: 0;
+}
+
+
+.marquee__container {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--red-color);
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .marquee__container {
+    height: 38px;
+    padding: 10px;
+  }
+}
+
+.marquee__content {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  white-space: nowrap;
+  padding-right: 15px;
+  animation: marquee 25s linear infinite;
+  color: var(--btn-text-color-light);
+  
+}
+
+.marquee__content li {
+  font-family: 'Merriweather';
+  text-transform: uppercase;
+  /* padding-left: 100%; */
+  font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .marquee__content li {
+    font-size: 16px;
+  }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

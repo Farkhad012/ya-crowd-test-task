@@ -1,0 +1,39 @@
+.header {
+  background: url('../images/texture.png') var(--section-background_color);
+  background-size: contain;
+  background-blend-mode: color-burn;
+  padding: 26px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 18px 2px;
+  }
+}
+
+.header__container {
+  min-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    min-height: 774px;
+  }
+}
+
+
+.header__logo {
+  z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 223px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header__logo {
+    width: 210px;
+  }
+}
