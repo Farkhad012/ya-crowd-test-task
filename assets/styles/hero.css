@@ -75,6 +75,15 @@
   .hero__btns {
     margin-top: 8px;
     flex-direction: column;
+    margin-bottom: 80px;
+
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__btns {
+    margin-top: 8px;
+    flex-direction: column;
     margin-bottom: 291px;
   }
 }
@@ -155,11 +164,6 @@
   bottom: 0;
 }
 
-.hero__bg {
-  width: auto;
-  height: auto;
-}
-
 .hero__bg img {
   position: absolute;
 }
@@ -169,18 +173,34 @@
   left: 600px;
 }
 
+@media screen and (max-width: 768px) {
+  .circle {
+    bottom: 70px;
+    left: 353px;
+    width: 298px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .circle {
     bottom: 70px;
     left: 10px;
     width: 298px;
-    z-index: -99;
   }
 }
 
 .chess-1 {
   bottom: 270px;
   left: 990px;
+}
+
+@media screen and (max-width: 768px) {
+  .chess-1 {
+    bottom: 162px;
+    left: 552px;
+    width: 62px;
+    transform: rotate(8deg);
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -197,18 +217,32 @@
   left: 656px;
 }
 
+@media screen and (max-width: 768px) {
+  .chess-2 {
+    bottom: 40px;
+    left: 351px;
+    transform: scale(0.45);
+  }
+}
+
 @media screen and (max-width: 375px) {
   .chess-2 {
     bottom: 40px;
     left: 8px;
     transform: scale(0.45);
-
   }
 }
 
 .city {
   bottom: 0px;
   left: -192px;
+}
+
+@media screen and (max-width: 768px) {
+  .city {
+    width: 890px;
+    left: -80px;
+  }
 }
 
 @media screen and (max-width: 375px) {
